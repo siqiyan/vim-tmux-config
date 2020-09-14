@@ -1,0 +1,5 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhist_cnt =3
+let g:netrw_dirhist_1='/home/curtis/sync_workspace/cmput609_reinforcement_learning2'
+let g:netrw_dirhist_2='/home/curtis/sync_workspace/cmput609_reinforcement_learning2/project'
+let g:netrw_dirhist_3='/home/curtis/sync_workspace/cmput609_reinforcement_learning2/project/RL609Project'
