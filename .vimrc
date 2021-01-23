@@ -5,7 +5,7 @@ filetype off                  " required
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 " alternatively, pass a path where Vundle should install plugins
-call vundle#begin('~/some/path/here')
+"call vundle#begin('~/some/path/here')
 
 " let Vundle manage Vundle, required
 Plugin 'VundleVim/Vundle.vim'
@@ -140,9 +140,9 @@ set clipboard=unnamed
 " Bind nohl
 " Removes highlight of your last search
 " ``<C>`` stands for ``CTRL`` and therefore ``<C-n>`` stands for ``CTRL+n``
-"" noremap <C-n> :nohl<CR>
-"" vnoremap <C-n> :nohl<CR>
-"" inoremap <C-n> :nohl<CR>
+noremap <C-n> :nohl<CR>
+vnoremap <C-n> :nohl<CR>
+inoremap <C-n> :nohl<CR>
 
 
 " Quicksave command
@@ -237,18 +237,22 @@ set expandtab
 autocmd BufNewFile,BufRead *.launch set filetype=xml
 
 
+" Highlight search
+set hlsearch
+
+" Incremental search
+set incsearch
+
 " Make search case insensitive
-"" set hlsearch
-"" set incsearch
 "" set ignorecase
 "" set smartcase
 
 
 " Disable stupid backup and swap files - they trigger too many events
 " for file system watchers
-"set nobackup
-"set nowritebackup
-"set noswapfile
+set nobackup
+set nowritebackup
+set noswapfile
 
 
 " Setup Pathogen to manage your plugins
