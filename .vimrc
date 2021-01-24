@@ -140,9 +140,9 @@ set clipboard=unnamed
 " Bind nohl
 " Removes highlight of your last search
 " ``<C>`` stands for ``CTRL`` and therefore ``<C-n>`` stands for ``CTRL+n``
-noremap <C-n> :nohl<CR>
-vnoremap <C-n> :nohl<CR>
-inoremap <C-n> :nohl<CR>
+"noremap <C-m> :nohl<CR>
+"vnoremap <C-m> :nohl<CR>
+"inoremap <C-m> :nohl<CR>
 
 
 " Quicksave command
@@ -244,8 +244,8 @@ set hlsearch
 set incsearch
 
 " Make search case insensitive
-"" set ignorecase
-"" set smartcase
+set ignorecase
+set smartcase
 
 
 " Disable stupid backup and swap files - they trigger too many events
