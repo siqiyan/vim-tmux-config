@@ -10,7 +10,7 @@ sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.
 
 # Install the Python LSP server
 sudo apt update && sudo apt install python3-pip
-pip install python-lsp-server
+pip install 'python-lsp-server[all]'
 
 # Copy the config files
 mkdir -p ~/.config/nvim
